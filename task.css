@@ -1,0 +1,327 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+
+}
+html{
+   
+    overflow-x: hidden;
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 300px;
+}
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:.5rem 2rem;
+    background: #333;
+    color:white;
+    cursor:pointer;
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+    border-radius:3rem;
+}
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.7rem;
+
+}
+.btn:hover{
+    background-color: teal;
+}
+
+header{
+    position:fixed;
+    top: 0;left:0;
+    z-index: 1000;
+    height: 100%;
+    width: 25rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+
+}
+header .user img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid white;
+}
+header .user .name{
+    font-size: 2rem;
+    color: white;
+}
+header .user .branch{
+    font-size: 1.3rem;
+    color: white;
+}
+
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a{
+    display:block;
+    width: 15rem;
+    padding: 0.5rem;
+    margin:1rem ;
+    background: #333;
+    color:whitesmoke;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+}
+header .navbar ul li a:hover{
+    background:darkcyan;
+}
+
+#menu{
+    position:fixed;
+    top: 2rem;
+    right:2rem;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display:none;
+
+
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 10rem;
+}
+.home h1{
+    font-size: 5rem;
+    color: white;
+
+}
+.home h1 span{
+    color: rgb(248, 248, 25);
+
+}
+
+.home p{
+    font-size: 1.3rem;
+    color: white;
+    padding:1rem 0;
+
+}
+
+.about{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 10rem;
+}
+.about .heading{
+    font-size: 5rem;
+    color:white;
+}
+.about .heading span{
+    color: rgb(221, 221, 56);
+}
+    
+.about h3{
+    color:white;
+    padding: 1rem;
+
+}
+
+.about .row .info h3 span{
+    color: rgb(221, 221, 56);
+    font-style:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid white;
+    position:relative;
+
+}
+.education .box-container .box span{
+    font-size: 1.2rem;
+    background: #222;
+    color: white;
+    border-radius: 4rem;
+    padding:.4rem 2.3rem;
+
+}
+.education .box-container .box h3{
+    font-size: 1.8rem;
+    color:white;
+    padding-top: 1.5rem;
+}
+.education .box-container .box p{
+    font-size:1.3rem;
+    color:white;
+    padding-top: 1rem;
+}
+.education{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 6rem;
+}
+.education .heading{
+    font-size: 4rem;
+    color:white;
+}
+.education .heading span{
+    color: rgb(221, 221, 56);
+}
+
+.skills .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.skills .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid white;
+    position:relative;
+
+}
+.skills .box-container .box span{
+    font-size: 1.2rem;
+    background: #222;
+    color: white;
+    border-radius: 4rem;
+    padding:.4rem 2.3rem;
+
+}
+.skills .box-container .box h3{
+    font-size: 1.8rem;
+    color:white;
+    padding-top: 1.5rem;
+}
+.skills .box-container .box ul li{
+    font-size:1.3rem;
+    color:white;
+    padding-top: 1rem;
+}
+.skills{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 6rem;
+}
+.skills .heading{
+    font-size: 4rem;
+    color:white;
+}
+.skills .heading span{
+    color: rgb(221, 221, 56);
+}
+
+
+.contact .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.contact .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid white;
+    position:relative;
+
+}
+.contact .box-container .box span{
+    font-size: 1.2rem;
+    background: #222;
+    color: white;
+    border-radius: 4rem;
+    padding:.4rem 2.3rem;
+
+}
+.contact .box-container .box h3{
+    font-size: 1.8rem;
+    color:white;
+    padding-top: 1.5rem;
+}
+.contact .box-container .box ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size:1.3rem;
+    color:white;
+    padding-top: 1rem;
+}
+.contact{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 6rem;
+}
+.contact .heading{
+    font-size: 4rem;
+    color:white;
+}
+.contact .heading span{
+    color: rgb(221, 221, 56);
+}
+
+.contact .box-container .box ul li i{
+    color:yellow;
+    padding-top: 1rem;
+    background-color: yellow;
+    
+}
+.contact .box-container .box ul li a{
+    text-decoration: none;
+    color:white;
+}
